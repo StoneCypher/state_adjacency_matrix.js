@@ -1,0 +1,19 @@
+{
+  "name": "state_adjacency_matrix.js",
+  "version": "1.0.0",
+  "description": "State adjacency matrix in JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StoneCypher/state_adjacency_matrix.js.git"
+  },
+  "author": "John Haugeland <stonecypher@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/StoneCypher/state_adjacency_matrix.js/issues"
+  },
+  "homepage": "https://github.com/StoneCypher/state_adjacency_matrix.js#readme"
+}
