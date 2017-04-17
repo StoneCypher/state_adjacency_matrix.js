@@ -1,6 +1,6 @@
 {
   "name": "state_adjacency_matrix.js",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "State adjacency matrix in JS",
   "main": "index.js",
   "scripts": {
