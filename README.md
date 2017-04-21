@@ -29,7 +29,7 @@ This says:
 
 1. This lists Washington, DC as a state.  This does not list any other non-state territories, eg Puerto Rico.
 1. There is a legitimate argument to be had about whether to connect the diagonals at the Four Corners.  
-  1. This dataset does, because that leads to better looking maps, in my opinion.
+    1. This dataset does, because that leads to better looking maps, in my opinion.
 
 ## Full dump
 
