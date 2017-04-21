@@ -28,10 +28,10 @@ This says:
 ## Full dump
 
 ```
-1> state_adjacency.map( 
-     (row,id) => '\n' + states[id] + ' - ' + row.map(a => `${a} ${states[a]}`)
-                                                .join(', ')
-   ).join('\n');
+1> '\n' + (state_adjacency.map( 
+     (row,id) => states[id] + ' - ' + row.map(a => `${a} ${states[a]}`)
+                                         .join(', ')
+   ).join('\n'));
 
 "
 AK -
