@@ -25,16 +25,29 @@ This says:
 
 ... and so on.
 
+Alternately, there's a state mapping object of names to names (in upper case abbreviation format only,) though that's less useful for algorithms.
+
+```
+1> state_adjacency_obj['PA'];
+["NY", "NJ", "DE", "MD", "WV", "OH"]
+
+2> state_adjacency_obj['FL'];
+["AL", "GA"]
+
+3> state_adjacency_obj['AK'];
+[]
+```
+
 ## Caveats
 
 1. This lists Washington, DC as a state.  This does not list any other non-state territories, eg Puerto Rico.
-1. There is a legitimate argument to be had about whether to connect the diagonals at the Four Corners (that is, whether AZ touches CO, and whether NM touches UT.)  
+1. There is a legitimate argument to be had about whether to connect the diagonals at the Four Corners (that is, whether AZ touches CO, and whether NM touches UT.)
     1. This dataset does list these as connected, because in my opinion that leads to better looking maps.
 
 ## Full dump
 
 ```
-1> '\n' + (state_adjacency.map( 
+1> '\n' + (state_adjacency.map(
      (row,id) => states[id] + ' - ' + row.map(a => `${a} ${states[a]}`)
                                          .join(', ')
    ).join('\n'));

@@ -57,4 +57,7 @@ const state_adjacency = [
 
 ];
 
-export { states, state_adjacency };
+const state_adjacency_obj = {};
+states.map( (state,i) => state_adjacency_obj[state] = state_adjacency[i].map(idx => states[idx]) );
+
+export { states, state_adjacency, state_adjacency_obj };
