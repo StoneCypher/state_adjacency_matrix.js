@@ -27,10 +27,14 @@ This says:
 
 ## Full dump
 
-```javascript
-1> state_adjacency.map( (row,id) => states[id] + ' - ' + row.map(a => `${a} ${states[a]}`).join(', ')).join('\n');
+```
+1> state_adjacency.map( 
+     (row,id) => '\n' + states[id] + ' - ' + row.map(a => `${a} ${states[a]}`)
+                                                .join(', ')
+   ).join('\n');
 
-"AK -
+"
+AK -
 AL - 25 MS, 42 TN, 10 GA, 9 FL
 AR - 24 MO, 42 TN, 25 MS, 18 LA, 43 TX, 36 OK
 AZ - 4 CA, 33 NV, 44 UT, 5 CO, 32 NM
